@@ -1,0 +1,19 @@
+
+<table>
+	<tr>
+		<th>Doktor</th>
+		<th>Hasta</th>
+		<th>Kalan zaman(gün)</th>
+	</tr>
+
+	<% for appointment in @appointments %>
+	<tr>
+		<td><%= appointment.doctor.full_name %></td>
+		<td><%= appointment.patient.name %> <%= appointment.patient.surname %></td>
+		<td><%= appointment.time_diff %> 
+
+	</tr>
+	<% end %>
+</table>
+
+

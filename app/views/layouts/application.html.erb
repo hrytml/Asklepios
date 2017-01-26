@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asklepios</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= link_to "Home", root_path %>
+  	<%= link_to "New Department", departments_new_path %>
+   	<%= link_to "Appointments", appointments_path %>
+    <%= yield %>
+  </body>
+</html>
